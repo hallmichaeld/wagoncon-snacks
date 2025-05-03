@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagoncon Snacks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            /* Light gray background */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        header img {
+            max-width: 273px;
+            height: auto;
+        }
+
+        .snacks {
+            margin-top: 20px;
+        }
+
+        .snack-item {
+
+            padding: 10px 0;
+            border: 1px solid #dee2e6;
+            /* Light gray border */
+            border-radius: 5px;
+            background-color: #fff;
+            /* White background for items */
+        }
+
+        .snack-item strong {
+            font-weight: bold;
+        }
+
+        .snack-alt-img,
+        .snack-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .snack-alt,
+        .snack-image-wrap {
+            aspect-ratio: 1;
+            display: block;
+            border: none;
+            background-color: #fff;
+            padding: 5px;
+        }
+
+        .snack-image-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .snack-alts {
+            display: flex;
+            height: 50%;
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        .snack-alt {
+            flex: 1;
+        }
+
+        .snack-name {
+            margin-top: 8px;
+            padding-top: 10px;
+            font-size: 18px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .single-alts .snack-alt {
+            display: none;
+        }
+
+        .alt-active {
+            border-bottom: solid 3px red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://wagoncon.com/wp-content/uploads/305702702_476184347852539_380893573887039663_n-removebg-preview-e1737370902883.jpg"
+            alt="Wagoncon" width="273" height="100">
+    </header>
+
+    <div class="container-xl text-center">
+        <h1 class="text-center">Wagoncon Snacks</h1>
+        <div class="row snacks justify-content-center align-items-stretch">
+
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/candy-m-ms-peanut.jpg" alt="m and ms peanut" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/candy-m-ms-peanut.jpg"
+                                alt="m and ms peanut" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/candy-m-ms.jpg" alt="m and ms"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/candy-milky-way.jpg" alt="milky way"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/candy-snickers.jpg" alt="snickers"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/candy-twix.jpg" alt="twix"
+                                class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Candy Bars <span class="snack-price">$2</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/chips-cheetos-crunchy.jpg" alt="cheetos crunchy" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/chips-cheetos-crunchy.jpg"
+                                alt="cheetos crunchy" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-cool-ranch.jpg" alt="cool ranch"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-doritos-nacho-cheese.jpg"
+                                alt="doritos nacho cheese" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-fritos.jpg" alt="fritos"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-lays-barbecue.jpg" alt="lays barbecue"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-lays.jpg" alt="lays"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/chips-ruffles-chedder-sour-cream.jpg"
+                                alt="ruffles cheddar sour cream" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Chips <span class="snack-price">$2</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/corn-nuts-bbq.jpg" alt="corn nuts bbq" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/corn-nuts-bbq.jpg"
+                                alt="corn nuts bbq" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/corn-nuts-chilie picante.jpg"
+                                alt="corn nuts chilie picante" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/corn-nuts-original.jpg"
+                                alt="corn nuts original" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/corn-nuts-ranch.jpg" alt="corn nuts ranch"
+                                class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Corn Nuts <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/fruit-strip-apple.jpg" alt="fruit strip apple" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-apple.jpg"
+                                alt="fruit strip apple" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-apricot.jpg"
+                                alt="fruit strip apricot" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-cherry.jpg"
+                                alt="fruit strip cherry" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-grape.jpg"
+                                alt="fruit strip grape" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-raspberry.jpg"
+                                alt="fruit strip raspberry" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/fruit-strip-strawberry.jpg"
+                                alt="fruit strip strawberry" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Fruit Leather <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/goldfish-cracker-chedder.jpg" alt="goldfish cracker cheddar"
+                            class="snack-img">
+                    </div>
+                    <div class="snack-alts single-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/goldfish-cracker-chedder.jpg"
+                                alt="goldfish cracker cheddar" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Goldfish Crackers <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/hello-panda-chocolate.jpg" alt="hello panda chocolate"
+                            class="snack-img">
+                    </div>
+                    <div class="snack-alts single-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/hello-panda-chocolate.jpg"
+                                alt="hello panda chocolate" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Panda cookies <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/rice-crisps-buttermilk-ranch.jpg" alt="rice crisps buttermilk ranch"
+                            class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/rice-crisps-buttermilk-ranch.jpg"
+                                alt="rice crisps buttermilk ranch" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/rice-crisps-chedder.jpg"
+                                alt="rice crisps cheddar" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/rice-crisps-sweet-spicy-chili.jpg"
+                                alt="rice crisps sweet spicy chili" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Rice Crisps <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/rice-krispies-treats.jpg" alt="rice krispies treats" class="snack-img">
+                    </div>
+                    <div class="snack-alts single-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/rice-krispies-treats.jpg"
+                                alt="rice krispies treats" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Rice Krispy Treats <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/tillamook-meat-stick-pepperoni.jpg"
+                            alt="tillamook meat stick pepperoni" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img
+                                src="https://wagcon-snacks.tiiny.site/tillamook-meat-stick-pepperoni.jpg"
+                                alt="tillamook meat stick pepperoni" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/tillamook-meat-stick-spicy-jalapeno.jpg"
+                                alt="tillamook meat stick spicy jalapeno" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/tillamook-meat-stick-teriyaki.jpg"
+                                alt="tillamook meat stick teriyaki" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Tillamook Meat Sticks <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/liquid-iv-golden-cherry.jpg" alt="liquid iv golden cherry"
+                            class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/liquid-iv-golden-cherry.jpg"
+                                alt="liquid iv golden cherry" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/liquid-iv-lemon-lime.jpg"
+                                alt="liquid iv lemon lime" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/liquid-iv-strawberry.jpg"
+                                alt="liquid iv strawberry" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/liquid-iv-white-peach.jpg"
+                                alt="liquid iv white peach" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Liquid IV <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/soda-diet-dr-pepper.jpg" alt="soda diet dr pepper" class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/soda-diet-dr-pepper.jpg"
+                                alt="soda diet dr pepper" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/soda-diet-pepsi.jpg" alt="soda diet pepsi"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/soda-dr-pepper.jpg" alt="soda dr pepper"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/soda-pepsi.jpg" alt="soda pepsi"
+                                class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/sodo-mtn-dew.jpg" alt="sodo mtn dew"
+                                class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Soda <span class="snack-price">$2</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/sparkling-water-grapefruit.jpg" alt="sparkling water grapefruit"
+                            class="snack-img">
+                    </div>
+                    <div class="snack-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/sparkling-water-grapefruit.jpg"
+                                alt="sparkling water grapefruit" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/sparkling-water-lemon.jpg"
+                                alt="sparkling water lemon" class="snack-alt-img"></button>
+                        <button class="snack-alt"><img src="https://wagcon-snacks.tiiny.site/sparkling-water-lime.jpg"
+                                alt="sparkling water lime" class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Sparkling Water <span class="snack-price">$2</span></div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 px-1 py-3">
+                <div class="snack-item">
+                    <div class="snack-image-wrap">
+                        <img src="https://wagcon-snacks.tiiny.site/water.jpg" alt="water" class="snack-img">
+                    </div>
+                    <div class="snack-alts single-alts">
+                        <button class="snack-alt alt-active"><img src="https://wagcon-snacks.tiiny.site/water.jpg" alt="water"
+                                class="snack-alt-img"></button>
+                    </div>
+                    <div class="snack-name">Water <span class="snack-price">$1</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDxyJxEI2ht6ZgVByHZ6INUK7M0"
+        crossorigin="anonymous"></script>
+
+    <script>"use strict";
+
+        document.addEventListener('click', function (event) {
+            const clickedButton = event.target.closest('.snack-alt');
+
+            if (clickedButton) {
+                const snackItem = clickedButton.closest('.snack-item');
+                if (!snackItem) {
+                    return; // Button is not within a snack-item, ignore.
+                }
+
+                const mainImage = snackItem.querySelector('.snack-img');
+                const altImage = clickedButton.querySelector('.snack-alt-img');
+                const altButtons = snackItem.querySelectorAll('.snack-alt');
+
+                if (mainImage && altImage) {
+                    mainImage.src = altImage.src;
+                    mainImage.alt = altImage.alt;
+
+                    altButtons.forEach(button => button.classList.remove('alt-active'));
+                    clickedButton.classList.add('alt-active');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
